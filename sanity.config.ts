@@ -15,4 +15,6 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
+  studioHost: 'sapod-admin',
 })
