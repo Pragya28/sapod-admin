@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity';
 
 export const episodeType = defineType({
   name: 'episode',
@@ -14,8 +14,9 @@ export const episodeType = defineType({
     defineField({
       name: 'slug',
       type: 'slug',
-      options: {source: 'title'},
+      options: { source: 'title' },
       validation: (rule) => rule.required(),
+      hidden: true,
     }),
     defineField({
       name: 'description',
@@ -50,37 +51,37 @@ export const episodeType = defineType({
       name: 'spotifyUrl',
       title: 'Spotify URL',
       type: 'url',
-      validation: (rule) => rule.uri({scheme: ['http', 'https']}),
+      validation: (rule) => rule.uri({ scheme: ['http', 'https'] }),
     }),
     defineField({
       name: 'applePodcastUrl',
       title: 'Apple Podcast URL',
       type: 'url',
-      validation: (rule) => rule.uri({scheme: ['http', 'https']}),
+      validation: (rule) => rule.uri({ scheme: ['http', 'https'] }),
     }),
     defineField({
       name: 'amazonMusicUrl',
       title: 'Amazon Music URL',
       type: 'url',
-      validation: (rule) => rule.uri({scheme: ['http', 'https']}),
+      validation: (rule) => rule.uri({ scheme: ['http', 'https'] }),
     }),
     defineField({
       name: 'youtubeMusicUrl',
       title: 'YouTube Music URL',
       type: 'url',
-      validation: (rule) => rule.uri({scheme: ['http', 'https']}),
+      validation: (rule) => rule.uri({ scheme: ['http', 'https'] }),
     }),
     defineField({
       name: 'pocketcastsUrl',
       title: 'Pocketcasts URL',
       type: 'url',
-      validation: (rule) => rule.uri({scheme: ['http', 'https']}),
+      validation: (rule) => rule.uri({ scheme: ['http', 'https'] }),
     }),
     defineField({
       name: 'youtubeUrl',
       title: 'YouTube URL',
       type: 'url',
-      validation: (rule) => rule.uri({scheme: ['http', 'https']}),
+      validation: (rule) => rule.uri({ scheme: ['http', 'https'] }),
     }),
   ],
-})
+});

@@ -1,3 +1,3 @@
-import {episodeType} from './episodeType'
+import { episodeType } from './episodeType';
 
-export const schemaTypes = [episodeType]
+export const schemaTypes = [episodeType];

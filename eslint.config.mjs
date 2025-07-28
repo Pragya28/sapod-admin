@@ -1,5 +1,5 @@
-import studio from '@sanity/eslint-config-studio'
-import {globals} from 'eslint-plugin-globals'
+import studio from '@sanity/eslint-config-studio';
+import { globals } from 'eslint-plugin-globals';
 
 export default [
   ...studio,
@@ -11,4 +11,4 @@ export default [
       },
     },
   },
-]
+];
